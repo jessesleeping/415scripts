@@ -5,7 +5,7 @@ HOMEDIR="/home/vagrant"
 
 # Create the virtual environment
 source /usr/local/bin/virtualenvwrapper.sh
-mkvirtual django
+mkvirtualenv django
 # Inside the python virtual env
 
 for ppkg in ${PIP_PACKAGES[@]}
