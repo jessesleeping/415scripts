@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PACKAGES=("postgresql" "python-pip")
+PACKAGES=("postgresql" "python-pip" "python-dev" "libpq-dev")
 PIP_PACKAGES=("virtualenv" "virtualenvwrapper")
 
 # Install all the packages needed
@@ -14,3 +14,7 @@ for ppkg in ${PIP_PACKAGES[@]}
 do
     pip install ${ppkg}
 done
+
+# Configure postgres
+sudo -u postgres createuser vagrant
+sudo -u postgres createdb vagrant
