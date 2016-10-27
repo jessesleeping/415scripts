@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PIP_PACKAGES=("Django" "python-psycopg2" "textract")
+PIP_PACKAGES=("Django" "python-psycopg2" "textract" "pytz")
 HOMEDIR="/home/vagrant"
 
 # Create the virtual environment
