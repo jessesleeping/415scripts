@@ -15,7 +15,7 @@ done
 
 # Download the source code
 wget "http://15415.courses.cs.cmu.edu/fall2016/hws/HW7/cmu_paper_clean.tar"
-tar cvf cmu_paper_clean.tar
+tar xvf cmu_paper_clean.tar
 rm cmu_paper_clean.tar
 
 # Deactivate the virtual env
