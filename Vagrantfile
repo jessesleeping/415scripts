@@ -31,7 +31,7 @@ Vagrant.configure(2) do |config|
 
   # Setup environment
   config.vm.provision :shell, :inline => "apt-get update"
-  config.vm.provision "shell", :path => "https://raw.githubusercontent.com/jessesleeping/415scripts/master/init.sh"
-  config.vm.provision "shell", :path => "https://raw.githubusercontent.com/jessesleeping/415scripts/master/customize.sh", :privileged => false
+  config.vm.provision "shell", :path => "http://15415.courses.cs.cmu.edu/fall2016/hws/HW7/init.sh"
+  config.vm.provision "shell", :path => "http://15415.courses.cs.cmu.edu/fall2016/hws/HW7/customize.sh", :privileged => false
 
 end
